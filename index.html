@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        #body {
+            position: relative;
+        }
+
+        h1 {
+            font-family: "Algerian", sans-serif !important;
+        }
+
+        .bla {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .red {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid red;
+            color: red;
+            cursor: pointer;
+        }
+        
+        .gr {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid green;
+            color: green;
+            cursor: pointer;
+        }
+        
+        .blu {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid blue;
+            color: blue;
+            cursor: pointer;
+        }
+        
+        .ye {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid rgb(255, 255, 0);
+            color: rgb(255, 255, 0);
+            cursor: pointer;
+        }
+        
+        .sb {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid skyblue;
+            color: skyblue;
+            cursor: pointer;
+        }
+        
+        .pi {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid pink;
+            color: pink;
+            cursor: pointer;
+        }
+        
+        .lb {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid #CCFF00;
+            color: #CCFF00;
+            cursor: pointer;
+        }
+        
+        .or {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid orange;
+            color: orange;
+            cursor: pointer;
+        }
+        
+        .pu {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid purple;
+            color: purple;
+            cursor: pointer;
+        }
+        
+        .sk {
+            padding: 0.2cm 0.5cm;
+            border: 1px solid #EDDD9E;
+            color: #EDDD9E;
+            cursor: pointer;
+            
+        }
+
+        img {
+            width: 6cm;
+        }
+
+        .suryansh {
+            position: fixed;
+            top: 28%;
+            left: 8%;
+        }
+
+        .agrim {
+            position: fixed;
+            top: 28%;
+            right: 8%;
+        }
+    </style>
+    <title>Color Code</title>
+</head>
+<body id="body">
+    <img class="suryansh" src="./images/Suryansh.jpg" alt="Suryansh ki Photo">
+    <img class="agrim" src="./images/Agrim.jpg" alt="Agrim ki Photo">
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1 id="heading" class="text-center mt-1">Color Code With Name</h1>
+        <p id="bla" class="bla">#000000 - Black</p>
+        <p id="red" class="red">#FF0000 - Red</p>
+        <p id="gr" class="gr">#00FF00 - Green</p>
+        <p id="blu" class="blu">#0000FF - Blue</p>
+        <p id="ye" class="ye">#FFFF00 - Yellow</p>
+        <p id="sb" class="sb">#00FFFF - Sky Blue</p>
+        <p id="pi" class="pi">#FF00FF - Pink</p>
+        <p id="lb" class="lb">#CCFF00 - Light Bright</p>
+        <p id="or" class="or">#FF9000 - Orange</p>
+        <p id="pu" class="pu">#9900FF - Purple</p>
+        <p id="sk" class="sk">#EDDD9E - Skin Color</p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script>
+    const bla = document.getElementById("bla");
+    const red = document.getElementById("red");
+    const gr = document.getElementById("gr");
+    const blu = document.getElementById("blu");
+    const ye = document.getElementById("ye");
+    const sb = document.getElementById("sb");
+    const pi = document.getElementById("pi");
+    const lb = document.getElementById("lb");
+    const or = document.getElementById("or");
+    const pu = document.getElementById("pu");
+    const sk = document.getElementById("sk");
+    const body = document.getElementById("body");
+    const heading = document.getElementById("heading");
+
+    bla.addEventListener("click", function(){
+        bla.style.color = "white";
+        body.style.color = "white";
+        heading.style.color = "white";
+        body.style.backgroundColor = "black";
+    });
+    
+    red.addEventListener("click", function(){
+        red.style.color = "black"
+        body.style.backgroundColor = "red";
+    });
+    
+    gr.addEventListener("click", function(){
+        gr.style.color = "black"
+        body.style.backgroundColor = "green";
+    });
+    
+    blu.addEventListener("click", function(){
+        blu.style.color = "black"
+        body.style.backgroundColor = "blue";
+    });
+    
+    ye.addEventListener("click", function(){
+        ye.style.color = "black"
+        body.style.backgroundColor = "yellow";
+    });
+    
+    sb.addEventListener("click", function(){
+        sb.style.color = "white"
+        body.style.backgroundColor = "skyblue";
+    });
+    
+    pi.addEventListener("click", function(){
+        pi.style.color = "white"
+        body.style.backgroundColor = "pink";
+    });
+    
+    lb.addEventListener("click", function(){
+        lb.style.color = "black"
+        body.style.backgroundColor = "#CCFF00";
+    });
+    
+    or.addEventListener("click", function(){
+        or.style.color = "white"
+        body.style.backgroundColor = "orange";
+    });
+    
+    pu.addEventListener("click", function(){
+        pu.style.color = "white"
+        body.style.backgroundColor = "purple";
+    });
+    
+    sk.addEventListener("click", function(){
+        sk.style.color = "black"
+        body.style.backgroundColor = "#EDDD9E";
+    });
+</script>
+</html>
